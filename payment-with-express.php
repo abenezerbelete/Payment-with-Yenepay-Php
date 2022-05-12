@@ -3,6 +3,7 @@
     <title>Payment</title>
     <body>
         <h2>Pay with Yenepay </h2>
+        <a href="payment-with-cart.php">Go try with Cart</a><br><br>
         <form method="post" action="https://test.yenepay.com/">
             <input type="hidden" name="process" value="Express">
             <input type="hidden" name="successUrl" value="http://localhost/Payment-with-Yenepay-Php/success.php">
@@ -20,7 +21,7 @@
             <input type="hidden" name="deliveryFee" value="0">
             <input type="hidden" name="tax1" value="0">
             <input type="hidden" name="tax2" value="0">
-            <button type="submit">pay with express</button>
+            <button type="submit">Pay with express</button>
         </form>
     </body>
 </html>
