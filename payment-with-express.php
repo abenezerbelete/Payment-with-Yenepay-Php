@@ -13,7 +13,7 @@
             <input type="hidden" name="merchantOrderId" value="xy2">
             <input type="hidden" name="expiresAfter" value="24">
             <input type="hidden" name="itemId" value="50">
-            <input type="hidden" name="itemName" value="Billing">
+            <input type="hidden" name="itemName" value="Watch">
             <input type="hidden" name="unitPrice" value="105.75">
             <input type="hidden" name="quantity" value="5">
             <input type="hidden" name="discount" value="0.5">

@@ -7,7 +7,8 @@
     <title>Paid</title>
 </head>
 <body>
-    <h3>You've successfully paid <?php echo $_GET["TotalAmount"] ?>! Thank you!</h3>
+    <h3>You've successfully paid <?php echo $_GET["TotalAmount"] ?> Birr Thank you!</h3>
     <a href="payment-with-express.php">to pay again with express</a>
+    <a href="payment-with-cart.php">to pay again with cart</a>
 </body>
 </html>

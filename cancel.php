@@ -9,5 +9,6 @@
 <body>
     <h3>You have canceled your payment!</h3>
     <a href="payment-with-express.php">To pay again with express</a>
+    <a href="payment-with-cart.php">To pay again with cart</a>
 </body>
 </html>

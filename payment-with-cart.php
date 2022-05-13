@@ -1,4 +1,4 @@
-<?php require './holder.php' ?>
+<?php require './cart.php' ?>
 <!Doctype html>
 <html>
     <title>Payment</title>
@@ -13,18 +13,16 @@
             <input type="hidden" name="merchantId" value="SB1151">
             <input type="hidden" name="merchantOrderId" value="moi2">
             <input type="hidden" name="expiresAfter" value="24">
-            <input type="hidden" name="totalItemsDeliveryFee" value="10">
-            <input type="hidden" name="totalItemsDiscount" value="5">
-            <input type="hidden" name="totalItemsHandlingFee" value="2.5">
-            <input type="hidden" name="totalItemsTax1" value="300">
-            <input type="hidden" name="totalItemsTax2" value="0">
-            <?php  foreach ($cart as $key => $value) {
-                echo "$key: ";
+            <?php  foreach ($cartItems as $key1 => $value) {
                 foreach ($value as $key => $value1) {
-                    echo "$key: $value1";
-                    ?><br><?php
+                    ?><input type="hidden" name="Items[<?php echo $key1,'].',$key ?>" value="<?php echo $value1 ?>"><?php
                 }
             } ?>
+            <input type="hidden" name="totalItemsDeliveryFee" value="0">
+            <input type="hidden" name="totalItemsDiscount" value="0">
+            <input type="hidden" name="totalItemsHandlingFee" value="20.5">
+            <input type="hidden" name="totalItemsTax1" value="135.6675">
+            <input type="hidden" name="totalItemsTax2" value="0">
             <button type="submit">Pay with cart</button>
         </form>
     </body>
